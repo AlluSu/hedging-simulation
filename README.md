@@ -1,11 +1,11 @@
 # Hedging assignment
-The purpose of this assignment is to perform delta hedging, delta-vega, delta-vega-gamma hedging and other financial risk management strategies on real option data. In this report, we are using Apple's stock and option data, which was obtained from Refinitiv using the university's license with the Python script found under data/data-fetching-scripts directory.  Apple stock options was chosen due to Apple's stock being very liquid.  
+The purpose of this assignment is to perform delta hedging, delta-vega hedging, delta-vega-gamma hedging and other financial risk management strategies on real option data. In this report, we are using Apple's stock option data, which was obtained from Refinitiv using the university's license with the Python script found under *data/data-fetching-scripts* directory. Apple stock options was chosen due to Apple's stock being very liquid.  
 
 This assignment was done as part of the Financial Engineering 1 class as a group project.  
 
 ## Hedging and option greeks  
 
-Hedging can be classified into two categories: static and dynamic. Static hedges do not need to be rebalanced when for example, volatility or underlying changes, as in dynamic hedging rebalancing is needed.  
+Hedging can be classified into two categories: static and dynamic. Static hedges do not need to be rebalanced when for example, volatility or underlying changes, as in dynamic hedging rebalancing is needed. A static hedge would be for example, a futures contract for a currency rate.  
 
 ### Delta and Delta hedging  
 
@@ -20,5 +20,11 @@ Gamma is the derivative of Delta, i.e., also the second derivative of the Black-
 As Delta and Gamma are Greeks with respect to the spot price, Vega is a Greek with respect to volatility. A positive Vega portfolio rises in value when the volatility increases, and falls in value when the volatility decreases. To attain a positive Vega, you should buy a call, and to attain a negative Vega, you should sell a call. A trader could take a long Vega position if they believe that volatility will increase in the future, and short Vega if they believe volatility will decrease. The Vega of the underlying is always 0, as like Gamma also.  
 
 ## Future work  
-The codebase, which simulates the hedging would need major improvements in terms of refactoring and presenting the results (output and plots).  
-Also the hedging logic could be battle-tested more thoroughly.  
+This repository is still work-in-progress, and could be improved in many ways:  
+
+- Add more option strategies in addition to Straddle and Strangle
+- Apply other hedging strategies than delta hedging to Straddle and Strangle
+- Make the codebase more cleaner and robust by splitting the code into smaller functions
+- Present the results more clearly (outputs and plots)
+- Make the code less copy-paste, and more generally applicable to different datasets and situations  
+
