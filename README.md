@@ -1,5 +1,5 @@
-# Hedging assignment
-The purpose of this assignment is to perform delta hedging, delta-vega hedging, delta-vega-gamma hedging and other financial risk management strategies on real option data. In this report, we are using Apple's stock option data, which was obtained from Refinitiv using the university's license with the Python script found under *data/data-fetching-scripts* directory. Apple stock options was chosen due to Apple's stock being very liquid.  
+# Hedging simulation
+This project performs delta hedging, delta-vega hedging, delta-vega-gamma hedging and other financial risk management strategies on real option data. The data used is Apple's stock option data, which was obtained from Refinitiv using the university's license with the Python script found under *data/data-fetching-scripts* directory. Apple stock options was chosen due to Apple's stock being very liquid.  
 
 This assignment was done as part of the Financial Engineering 1 class as a group project.  
 
